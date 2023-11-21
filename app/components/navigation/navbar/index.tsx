@@ -1,20 +1,16 @@
 import React from "react";
 import Link from "next/link";
-// import Logo from "./Logo";
-// import Button from "./Button";
-
+import Logo from "./Logo";
 
 const NavBar = (
-  { toggle } : 
-  { toggle: () => void; }) : 
-  JSX.Element => {
+  { toggle } : { toggle: () => void }) => {
   return (
     <>
-      <div className="w-full h-20 bg-emerald-800 sticky top-0">
+      <div className="w-full h-20 bg-black bg-opacity-75 sticky top-0">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
-            {/* <Logo /> */}
-            <ul className="hidden md:flex gap-x-6 text-white">
+            <Logo />
+            <ul className="hidden md:flex gap-x-6 whitespace-nowrap text-white">
               <li>
                 <Link href="/about-me">
                   <p>About Me</p>
