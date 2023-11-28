@@ -5,7 +5,7 @@ import Link from "next/link";
 const Logo = () => {
   return (
     <Link href="/">
-      <Image src="/logo-softaff-trasparent.png" alt="logo" width={200} height={35} />
+      <Image src="/img/logo.png" alt="logo" width={200} height={35} />
     </Link>
   )
 }

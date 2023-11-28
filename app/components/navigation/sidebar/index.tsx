@@ -1,4 +1,7 @@
+"use client"
+
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 
 const SideBar = ({
   isOpen,
@@ -7,10 +10,13 @@ const SideBar = ({
   isOpen: boolean;
   toggle: () => void;
 }) => {
+
+  const currentRoute = usePathname(); 
+
   return (
     <>
       <div
-        className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white grid pt-[120px] left-0 z-10"
+        className="fixed w-full h-full overflow-hidden justify-center bg-black grid pt-[120px] left-0 z-10"
         style={{
           opacity: `${isOpen ? "1" : "0"}`,
           top: ` ${isOpen ? "0" : "-100%"}`,
@@ -26,18 +32,51 @@ const SideBar = ({
           </svg>
         </button>
 
-        <ul className="sidebar-nav text-center leading-relaxed text-xl">
+        <ul className="text-center leading-relaxed text-xl">
           <li>
-            <Link href="/about-me" onClick={toggle}><p>About Me</p></Link>
+            <Link onClick={toggle} href="/">
+              <p className={`text-lg font-medium ${
+                currentRoute === "/"
+                ? "border-b-2 border-purple-500"
+                : "text-gray-400"
+              }`}>Home</p>
+            </Link>
           </li>
           <li>
-            <Link href="/blog" onClick={toggle}><p>Blog</p></Link>
+            <Link onClick={toggle} href="/about-me">
+              <p className={`text-lg font-medium ${
+                currentRoute === "/about-me"
+                ? "border-b-2 border-purple-500"
+                : "text-gray-400"
+              }`}>About Me</p>
+            </Link>
           </li>
           <li>
-            <Link href="/projects" onClick={toggle}><p>Projects</p></Link>
+            <Link onClick={toggle} href="/blog">
+            <p className={`text-lg font-medium ${
+                currentRoute === "/blog"
+                ? "border-b-2 border-purple-500"
+                : "text-gray-400"
+              }`}>Blog</p>
+            </Link>
           </li>
           <li>
-            <Link href="/contact" onClick={toggle}><p>Contact</p></Link>
+            <Link onClick={toggle} href="/projects">
+            <p className={`text-lg font-medium ${
+                currentRoute === "/projects"
+                ? "border-b-2 border-purple-500"
+                : "text-gray-400"
+              }`}>Projects</p>
+            </Link>
+          </li>
+          <li>
+            <Link onClick={toggle} href="/contact">
+            <p className={`text-lg font-medium ${
+                currentRoute === "/contact"
+                ? "border-b-2 border-purple-500"
+                : "text-gray-400"
+              }`}>Contact</p>
+            </Link>
           </li>
         </ul>
       </div>

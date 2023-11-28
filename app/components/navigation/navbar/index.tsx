@@ -1,9 +1,15 @@
+"use client"
+
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import { usePathname } from 'next/navigation';
 
 const NavBar = (
   { toggle } : { toggle: () => void }) => {
+
+  const currentRoute = usePathname(); 
+
   return (
     <>
       <div className="w-full h-20 bg-black bg-opacity-75 sticky top-0">
@@ -13,22 +19,38 @@ const NavBar = (
             <ul className="hidden md:flex gap-x-6 whitespace-nowrap text-white">
               <li>
                 <Link href="/about-me">
-                  <p>About Me</p>
+                  <p className={`text-lg font-medium ${
+                    currentRoute === "/about-me"
+                    ? "border-b-2 border-indigo-500"
+                    : "text-gray-400"
+                  }`}>About Me</p>
                 </Link>
               </li>
               <li>
                 <Link href="/blog">
-                  <p>Blog</p>
+                <p className={`text-lg font-medium ${
+                    currentRoute === "/blog"
+                    ? "border-b-2 border-indigo-500"
+                    : "text-gray-400"
+                  }`}>Blog</p>
                 </Link>
               </li>
               <li>
                 <Link href="/projects">
-                  <p>Projects</p>
+                <p className={`text-lg font-medium ${
+                    currentRoute === "/projects"
+                    ? "border-b-2 border-indigo-500"
+                    : "text-gray-400"
+                  }`}>Projects</p>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
-                  <p>Contact</p>
+                <p className={`text-lg font-medium ${
+                    currentRoute === "/contact"
+                    ? "border-b-2 border-indigo-500"
+                    : "text-gray-400"
+                  }`}>Contact</p>
                 </Link>
               </li>
             </ul>
