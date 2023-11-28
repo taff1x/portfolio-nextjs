@@ -16,40 +16,40 @@ const NavBar = (
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
-            <ul className="hidden md:flex gap-x-6 whitespace-nowrap text-white">
+            <ul className="hidden md:flex gap-x-6 whitespace-nowrap">
               <li>
                 <Link href="/about-me">
-                  <p className={`text-lg font-medium ${
-                    currentRoute === "/about-me"
-                    ? "border-b-2 border-indigo-500"
-                    : "text-gray-400"
+                <p className={`text-lg font-medium hover:text-gray-200 ${
+                  currentRoute === "/about-me"
+                  ? "border-b-2 border-indigo-500"
+                  : "text-gray-400"
                   }`}>About Me</p>
                 </Link>
               </li>
               <li>
                 <Link href="/blog">
-                <p className={`text-lg font-medium ${
-                    currentRoute === "/blog"
-                    ? "border-b-2 border-indigo-500"
-                    : "text-gray-400"
+                <p className={`text-lg font-medium hover:text-gray-200 ${
+                  currentRoute === "/blog"
+                  ? "border-b-2 border-indigo-500"
+                  : "text-gray-400"
                   }`}>Blog</p>
                 </Link>
               </li>
               <li>
                 <Link href="/projects">
-                <p className={`text-lg font-medium ${
-                    currentRoute === "/projects"
-                    ? "border-b-2 border-indigo-500"
-                    : "text-gray-400"
+                <p className={`text-lg font-medium hover:text-gray-200  ${
+                  currentRoute === "/projects"
+                  ? "border-b-2 border-indigo-500"
+                  : "text-gray-400"
                   }`}>Projects</p>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
-                <p className={`text-lg font-medium ${
-                    currentRoute === "/contact"
-                    ? "border-b-2 border-indigo-500"
-                    : "text-gray-400"
+                <p className={`text-lg font-medium hover:text-gray-200  ${
+                  currentRoute === "/contact"
+                  ? "border-b-2 border-indigo-500"
+                  : "text-gray-400"
                   }`}>Contact</p>
                 </Link>
               </li>

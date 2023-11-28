@@ -35,45 +35,45 @@ const SideBar = ({
         <ul className="text-center leading-relaxed text-xl">
           <li>
             <Link onClick={toggle} href="/">
-              <p className={`text-lg font-medium ${
+              <p className={`text-lg font-medium hover:text-gray-200 ${
                 currentRoute === "/"
-                ? "border-b-2 border-purple-500"
+                ? "border-b-2 border-indigo-500"
                 : "text-gray-400"
               }`}>Home</p>
             </Link>
           </li>
           <li>
             <Link onClick={toggle} href="/about-me">
-              <p className={`text-lg font-medium ${
+              <p className={`text-lg font-medium hover:text-gray-200 ${
                 currentRoute === "/about-me"
-                ? "border-b-2 border-purple-500"
+                ? "border-b-2 border-indigo-500"
                 : "text-gray-400"
               }`}>About Me</p>
             </Link>
           </li>
           <li>
             <Link onClick={toggle} href="/blog">
-            <p className={`text-lg font-medium ${
+            <p className={`text-lg font-medium hover:text-gray-200 ${
                 currentRoute === "/blog"
-                ? "border-b-2 border-purple-500"
+                ? "border-b-2 border-indigo-500"
                 : "text-gray-400"
               }`}>Blog</p>
             </Link>
           </li>
           <li>
             <Link onClick={toggle} href="/projects">
-            <p className={`text-lg font-medium ${
+            <p className={`text-lg font-medium hover:text-gray-200 ${
                 currentRoute === "/projects"
-                ? "border-b-2 border-purple-500"
+                ? "border-b-2 border-indigo-500"
                 : "text-gray-400"
               }`}>Projects</p>
             </Link>
           </li>
           <li>
             <Link onClick={toggle} href="/contact">
-            <p className={`text-lg font-medium ${
+            <p className={`text-lg font-medium hover:text-gray-200 ${
                 currentRoute === "/contact"
-                ? "border-b-2 border-purple-500"
+                ? "border-b-2 border-indigo-500"
                 : "text-gray-400"
               }`}>Contact</p>
             </Link>
