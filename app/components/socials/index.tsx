@@ -22,9 +22,6 @@ const Socials = () => {
           <a className="flex justify-center flex-1 max-w-[150px]  text-gray-500 hover:text-gray-300" href="https://www.linkedin.com/in/marcin-taff/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon className="w-12" icon={faLinkedin} />
           </a>
-          <a className="flex justify-center flex-1 max-w-[150px]  text-gray-500 hover:text-gray-300" href="tel:+48504645619">
-            <FontAwesomeIcon className="w-12" icon={faPhone} />
-          </a>
         </div>
       </>
     );

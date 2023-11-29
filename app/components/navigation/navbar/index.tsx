@@ -13,7 +13,7 @@ const NavBar = (
   return (
     <>
       <div className="w-full h-20 bg-black bg-opacity-75 sticky top-0">
-        <div className="container mx-auto px-4 h-full">
+        <div className="container mx-auto px-4 lg:px-8 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
             <ul className="hidden md:flex gap-x-6 whitespace-nowrap">
