@@ -50,37 +50,36 @@ export default function ContactForm() {
     }
   }, [isDirty])
 
-  useEffect(
-    () => {
-      if(isSubmitSuccessful) {
-        setShowMsg(true)
-        const delay = 5
-        let timer = setTimeout(() => setShowMsg(false), delay * 1000)
-        
-        return () => {
-          clearTimeout(timer)
-        };
-      }
-    }, [isSubmitSuccessful])
+  useEffect(() => {
+    if(isSubmitSuccessful) {
+      setShowMsg(true)
+      const delay = 10
+      let timer = setTimeout(() => setShowMsg(false), delay * 1000)
+      
+      return () => {
+        clearTimeout(timer)
+      };
+    }
+  }, [isSubmitSuccessful])
 
   return (
-    <>
+    <div className="container m-auto w-full py-16 p-2">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-white dark:bg-blue-500"
+        className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-indigo-700"
       >
-        <h1 className="text-2xl font-bold dark:text-gray-50">Send a message</h1>
+        <h1 className="text-2xl font-bold text-gray-50">Send a message</h1>
 
         <label
           htmlFor="fullname"
-          className="text-gray-500 font-light mt-8 dark:text-gray-50"
+          className="text-gray-50 font-light mt-8"
         >
-          Full name<span className="text-red-500 dark:text-gray-50">*</span>
+          Full name<span className="text-red-400">*</span>
         </label>
         <input
           type="text"
           placeholder="Full Name"
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-50"
           {...register("fullname", {
             required: true,
             minLength: {
@@ -94,19 +93,19 @@ export default function ContactForm() {
           })}
         />
         {errors.fullname && (
-          <p className="text-sm text-red-600"> {errors.fullname.message} </p>
+          <p className="text-sm text-red-400"> {errors.fullname.message} </p>
         )}
 
         <label
           htmlFor="email"
-          className="text-gray-500 font-light mt-4 dark:text-gray-50"
+          className="text-gray-50 font-light mt-4"
         >
-          E-mail<span className="text-red-500">*</span>
+          E-mail<span className="text-red-400">*</span>
         </label>
         <input
           type="email"
           placeholder="example@domain.com"
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-50"
           {...register("email", {
             required: true,
             minLength: {
@@ -120,19 +119,19 @@ export default function ContactForm() {
           })}
         />
         {errors.email && (
-          <p className="text-sm text-red-600"> {errors.email.message} </p>
+          <p className="text-sm text-red-400"> {errors.email.message} </p>
         )}
 
         <label
           htmlFor="subject"
-          className="text-gray-500 font-light mt-4 dark:text-gray-50"
+          className="text-gray-50 font-light mt-4"
         >
-          Subject<span className="text-red-500">*</span>
+          Subject<span className="text-red-400">*</span>
         </label>
         <input
           type="text"
           placeholder="Subject"
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-50"
           {...register("subject", {
             required: true,
             minLength: {
@@ -146,19 +145,19 @@ export default function ContactForm() {
           })}
         />
         {errors.subject && (
-          <p className="text-sm text-red-600"> {errors.subject.message} </p>
+          <p className="text-sm text-red-400"> {errors.subject.message} </p>
         )}
 
         <label
           htmlFor="message"
-          className="text-gray-500 font-light mt-4 dark:text-gray-50"
+          className="text-gray-50 font-light mt-4 "
         >
-          Message<span className="text-red-500">*</span>
+          Message<span className="text-red-400">*</span>
         </label>
         <textarea
           rows={4}
           placeholder="Type your message"
-          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+          className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-50"
           {...register("message", {
             required: true,
             minLength: {
@@ -172,21 +171,21 @@ export default function ContactForm() {
           })}
         ></textarea>
         {errors.message && (
-          <p className="text-sm text-red-600"> {errors.message.message} </p>
+          <p className="text-sm text-red-400"> {errors.message.message} </p>
         )}
 
-        <div className="flex flex-row items-center justify-start">
+        <div className="flex flex-col text-center gap-2">
           <button
             disabled={!isDirty || !isValid || isSubmitting}
             type="submit"
-            className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
+            className="self-center text-black disabled:text-gray-700 px-5 py-2.5 mt-8 bg-gradient-to-r from-green-500 to-fuchsia-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-gray-100 font-bold rounded-full text-2xl flex flex-row items-center disabled:cursor-not-allowed"
           >
-            Submit
+            { isSubmitting ? "SENDING" : "SEND" }
             <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              className="text-cyan-500 ml-2"
+              className="ml-2"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -196,11 +195,12 @@ export default function ContactForm() {
               />
             </svg>
           </button>
+          { isSubmitting && <p className="text-lg text-gray-300"> Message is beeing sent... </p> }
+          { isSubmitSuccessful && showMsg && !hasError && <p className="text-lg text-gray-300">Message has been sent. Thank You! </p> }
+          { hasError && <p className="text-lg text-red-400"> {errorMsg} </p>}
         </div>
-        { isSubmitting && <p className="text-lg text-gray-700"> Message is beeing sent... </p> }
-        { isSubmitSuccessful && showMsg && !hasError && <p className="text-lg text-green-800">Message has been sent. Thank You! </p> }
-        { hasError && <p className="text-lg text-red-600"> {errorMsg} </p>}
+        
       </form>
-    </>
+    </div>
   );
 }
