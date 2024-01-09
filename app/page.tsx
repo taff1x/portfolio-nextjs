@@ -1,7 +1,7 @@
 import React from "react";
 
-import LandingPage from "./components/landing-page";
-import ContactSection from "./components/contact";
+import LandingPage from "@/app/components/landing-page";
+import ContactSection from "@/app/components/contact-section";
 
 
 export default function Home() {
