@@ -3,7 +3,7 @@ import React from 'react'
 const Slug  = ( { params } : { params : { slug : string} }) => {
   const { slug }  = params
   return (
-    <div>To jest super twój elo postuwer numer {slug} </div>
+    <div>This is example post no. {slug} </div>
   )
 }
 

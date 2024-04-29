@@ -17,7 +17,7 @@ const NavBar = (
           <div className="flex justify-between items-center h-full">
             <Logo />
             <ul className="hidden md:flex gap-x-6 whitespace-nowrap">
-              <li>
+              {/* <li>
                 <Link href="/about-me">
                 <p className={`text-lg font-medium hover:text-gray-200 ${
                   currentRoute === "/about-me"
@@ -43,7 +43,7 @@ const NavBar = (
                   : "text-gray-400"
                   }`}>Projects</p>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contact">
                 <p className={`text-lg font-medium hover:text-gray-200  ${

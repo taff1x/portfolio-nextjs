@@ -16,11 +16,11 @@ export default function LandingPage() {
                 <h2 className="text-2xl font-semibold text-gray-300">Uniting Precision Across</h2>
                 <ul className="list-none grid grid-cols-2 lg:grid-cols-3 gap-2 items-center justify-center whitespace-nowrap text-lg text-gray-500">
                   <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">SCADA</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">PLCs</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">HMIs</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Web Apps</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">APIs</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Databases</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">PLC</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">HMI</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Embedded</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Web App</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">API & DB</li>
                 </ul>
                 <h1 className="text-3xl font-semibold text-center">
                   for Seamless <span className="tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-fuchsia-500">Synergy</span> and Enhanced Efficiency
@@ -37,11 +37,19 @@ export default function LandingPage() {
                 </div>
                 <div className="pt-6 md:p-8 text-center xl:text-left space-y-4">
                   <blockquote>
-                    <p className="text-lg font-medium">
-                      Software Developer in Maritime Industry.
-                      Focused on improving skills in Python and JS.
-                      Husband, father, two-time-a-week-football-player. Globetrotter wannabe.
-                    </p>
+                  <p className="text-lg font-medium">
+                    Software Developer in Maritime Industry. Programming in Python, JS, and C.
+                    <a
+                      href="https://github.com/OpenCPLC"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span className="text-green-500 italic"> OpenCPLC </span>
+                    </a>
+                    founder. Husband, father, two-time-a-week football player. Globetrotter wannabe.
+                  </p>
+
+
                   </blockquote>
                   <figcaption className="font-medium">
                     <div className="text-green-500">
