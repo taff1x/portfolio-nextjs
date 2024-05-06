@@ -20,9 +20,10 @@
     {
         "name": "ORP Grom",
         "dateRange": "Jan 2023 - Present",
-        "description": "R&D project focused on an intelligent, integrated system for energy-saving operation of the ship's engine room.",
+        "description": "Missile ship and the third and final vessel of the Orkan class, serving in the Polish Navy",
         "responsibilities": [
-            "Created a Dockerized asynchronous API for CRUD operations on SQL databases using FastAPI, Uvicorn, SQLModel, SQLAlchemy, Alembic, and Poetry."
+            "Created a Dockerized asynchronous API for CRUD operations on SQL databases using FastAPI, Uvicorn, SQLModel, SQLAlchemy, Alembic, and Poetry.",
+            "Designed and implemented dynamic PowerApps intelligent Dataverse IO list for scalable integration of ship automation data."
         ]
     },
     {
