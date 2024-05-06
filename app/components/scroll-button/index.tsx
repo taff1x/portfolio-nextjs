@@ -34,7 +34,7 @@ const ScrollButton = () => {
       
     return (
       <button
-        className="bg-indigo-500/80 border-none rounded-lg bottom-3 text-black cursor-pointer hidden outline-none p-3 fixed right-3 z-9"
+        className="bg-indigo-500/80 border-none rounded-lg bottom-3 text-black cursor-pointer hidden outline-none p-3 fixed right-3 z-10"
         style={{display: visible ? 'inline' : 'none'}}
         onClick={scrollToTop}
       >
