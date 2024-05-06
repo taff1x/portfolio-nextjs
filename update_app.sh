@@ -11,6 +11,8 @@ pm2 stop "$APP_NAME"
 # Remove old process
 pm2 delete "$APP_NAME"
 
+git reset --hard
+
 # Pull the latest changes from Git
 git pull
 
