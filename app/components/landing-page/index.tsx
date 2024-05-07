@@ -38,7 +38,7 @@ export default function LandingPage() {
                 <div className="pt-6 md:p-8 text-center xl:text-left space-y-4">
                   <blockquote>
                   <p className="text-lg font-medium">
-                    Software Developer in Maritime Industry. Programming in Python, JS, and C.
+                    Software Developer in Maritime Industry. Programming in Python, JS and C.
                     <a
                       href="https://github.com/OpenCPLC"
                       target="_blank"
