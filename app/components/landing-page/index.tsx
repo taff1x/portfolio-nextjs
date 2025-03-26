@@ -17,9 +17,9 @@ export default function LandingPage() {
                 <ul className="list-none grid grid-cols-2 lg:grid-cols-3 gap-2 items-center justify-center whitespace-nowrap text-lg text-gray-500">
                   <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">R&D Solutions</li>
                   <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">SCADA & HMI</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">PLC & Embedded</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Server & PLC</li>
                   <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Smart Home</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Web Development</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Web Dev.</li>
                   <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">E-commerce</li>
                 </ul>
                 <h1 className="text-3xl font-semibold text-center">
