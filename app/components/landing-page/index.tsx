@@ -15,12 +15,12 @@ export default function LandingPage() {
                 <h1 className="text-3xl font-semibold">Automation <span className="tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-fuchsia-500">Excellence</span>:</h1>
                 <h2 className="text-2xl font-semibold text-gray-300">Uniting Precision Across</h2>
                 <ul className="list-none grid grid-cols-2 lg:grid-cols-3 gap-2 items-center justify-center whitespace-nowrap text-lg text-gray-500">
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">SCADA</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">PLC</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">HMI</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Embedded</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Web App</li>
-                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">API & DB</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">R&D Solutions</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">SCADA & HMI</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">PLC & Embedded</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Smart Home</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">Web Development</li>
+                  <li className="bg-[url('/img/checkbox.svg')] pl-8 bg-no-repeat bg-left bg-contain">E-commerce</li>
                 </ul>
                 <h1 className="text-3xl font-semibold text-center">
                   for Seamless <span className="tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-fuchsia-500">Synergy</span> and Enhanced Efficiency

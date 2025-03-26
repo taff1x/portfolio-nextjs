@@ -41,7 +41,7 @@ const BottomBar = () => {
       </div>
 
       <div className="flex gap-2 pb-2">
-        <span>&copy; 2024</span>
+        <span>&copy; 2025</span>
         <a href="https://www.linkedin.com/in/marcin-taff/" target="_blank" rel="noopener noreferrer">
           Marcin Taff
         </a>

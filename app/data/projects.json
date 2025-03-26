@@ -1,93 +1,132 @@
 [
-    {
-        "name": "OpenCPLC",
-        "dateRange": "Feb 2024 - Present",
-        "description": "The OpenCPLC project provides a middleware layer between your application and microcontroller peripherals.",
-        "responsibilities": [
+  {
+      "name": "Smart Home Application",
+      "dateRange": "April 2025 - Present",
+      "description": "Smart Home application for a newly built building in Gdynia, integrating multiple devices with visualization on a tablet and web interface, providing remote access via the cloud.",
+      "responsibilities": [
+          "Designed and implemented a Smart Home system with seamless integration of IoT devices.",
+          "Developed a user-friendly visualization accessible on tablets and web browsers.",
+          "Enabled secure remote access through cloud-based solutions."
+      ]
+  },
+  {
+      "name": "AquaGen+ E-commerce Website",
+      "dateRange": "March 2025 - Present",
+      "description": "E-commerce website for AquaGen Polska (aquagenpolska.pl), catering to the beauty industry.",
+      "responsibilities": [
+          "Designed and developed a responsive e-commerce platform for AquaGen Polska.",
+          "Integrated payment gateways and optimized the website for user experience.",
+          "Ensured scalability and performance for high traffic."
+      ]
+  },
+  {
+      "name": "Wireless Communication Integration for Power Generation",
+      "dateRange": "March 2025 - March 2025",
+      "description": "Integration of wireless communication for power generation devices using photovoltaics, including Fronius inverters and smart meters, via LoRa technology.",
+      "responsibilities": [
+          "Implemented LoRa-based communication for Fronius inverters and smart meters.",
+          "Optimized data transmission for real-time monitoring of photovoltaic power generation.",
+          "Ensured reliable and secure wireless communication for energy management."
+      ]
+  },
+  {
+    "name": "BBC Vermont",
+    "dateRange": "Nov 2024 - Feb 2025",
+    "description": "Main engineer and team leader for the repair of the ship's engine room after a fire in France. Responsible for creating the E&A automation package for the NK class classification society and commissioning automation, propulsion, and engine room systems.",
+    "responsibilities": [
+        "Led the engineering team during the repair of the ship's engine room after a fire.",
+        "Prepared comprehensive E&A automation documentation for the NK class classification society.",
+        "Commissioned automation, propulsion, and engine room systems to ensure full operational readiness."
+    ]
+  },
+  {
+    "name": "AquaGen+",
+    "dateRange": "April 2024",
+    "description": "Hydrogen purification machine with advanced technology and embedded systems integration.",
+    "responsibilities": [
+        "Developed an interactive touch panel visualization for efficient operation and monitoring.",
+        "Supported the integration of embedded solutions to enhance system functionality and performance."
+    ]
+  },
+  {
+      "name": "OpenCPLC",
+      "dateRange": "Feb 2024 - Present",
+      "description": "The OpenCPLC project provides a middleware layer between your application and microcontroller peripherals.",
+      "responsibilities": [
           "Designed and implemented the Uno STM32 PLC for small and medium-sized automation projects.",
           "Focused on programming tasks for enhanced functionality and efficiency."
-        ]
-    },
-    {
-        "name": "AquaGen+",
-        "dateRange": "April 2024",
-        "description": "Hydrogen purification machine with advanced technology and embedded systems integration.",
-        "responsibilities": [
-          "Developed an interactive touch panel visualization for efficient operation and monitoring.",
-          "Supported the integration of embedded solutions to enhance system functionality and performance."
-        ]
-    },
-    {
-        "name": "ORP Grom",
-        "dateRange": "Jan 2023 - Present",
-        "description": "Missile ship and the third and final vessel of the Orkan class, serving in the Polish Navy",
-        "responsibilities": [
-            "Created a Dockerized asynchronous API for CRUD operations on SQL databases using FastAPI, Uvicorn, SQLModel, SQLAlchemy, Alembic, and Poetry.",
-            "Designed and implemented dynamic PowerApps intelligent Dataverse IO list for scalable integration of ship automation data."
-        ]
-    },
-    {
+      ]
+  },
+  {
+      "name": "ORP Grom",
+      "dateRange": "Jan 2023 - Present",
+      "description": "Missile ship and the third and final vessel of the Orkan class, serving in the Polish Navy",
+      "responsibilities": [
+          "Created a Dockerized asynchronous API for CRUD operations on SQL databases using FastAPI, Uvicorn, SQLModel, SQLAlchemy, Alembic, and Poetry.",
+          "Designed and implemented dynamic PowerApps intelligent Dataverse IO list for scalable integration of ship automation data."
+      ]
+  },
+  {
       "name": "R&D - Marine Engine Room Energy Efficiency System",
       "dateRange": "Mar 2021 - Dec 2023",
       "description": "R&D project focused on an intelligent, integrated system for energy-saving operation of the ship's engine room.",
       "responsibilities": [
-        "Developed an energy-efficient program for motor control, certified by PRS",
-        "Developed a scalable Integrated Automation and Control Management System (IACMS) structure for PLCs, SCADA, and API/database integration."
+          "Developed an energy-efficient program for motor control, certified by PRS",
+          "Developed a scalable Integrated Automation and Control Management System (IACMS) structure for PLCs, SCADA, and API/database integration."
       ]
-    },
-    {
+  },
+  {
       "name": "266 - ORP Arctowski",
       "dateRange": "Oct 2020 - Jul 2022",
       "description": "Survey ship of the Polish Navy.",
       "responsibilities": [
-        "Designed and programmed Integrated Automation and Control Management Systems (IACMS) using PLCs and SCADA technology."
+          "Designed and programmed Integrated Automation and Control Management Systems (IACMS) using PLCs and SCADA technology."
       ]
-    },
-    {
+  },
+  {
       "name": "511 - ORP Xawery Czernicki",
       "dateRange": "May 2020 - Oct 2020",
       "description": "A mine countermeasure forces command vessel of the Polish Navy.",
       "responsibilities": [
-        "Programmed various applications for Integrated Automation and Control Management Systems (IACMS) in PLCs and HMIs"
+          "Programmed various applications for Integrated Automation and Control Management Systems (IACMS) in PLCs and HMIs"
       ]
-    },
-    {
+  },
+  {
       "name": "NB7070 - RV Atair",
       "dateRange": "Jan 2020 - May 2020",
       "description": "RV Atair is a research vessel owned and operated by the Federal Maritime and BSH.",
       "responsibilities": [
-        "Designing and programming automated lighting management system for Wheelhouse Area"
+          "Designing and programming automated lighting management system for Wheelhouse Area"
       ]
-    },
-    {
+  },
+  {
       "name": "B774 - Honfleur",
       "dateRange": "Dec 2017 - Apr 2020",
       "description": "RoRo Passenger Ship NB-774 with an electric propulsion and powered by LNG.",
       "responsibilities": [
-        "Designing and programming advanced automated lighting management system for Pax Areas",
-        "Designing cutting-edge LV electrical distribution systems for various applications",
-        "Leading an engineering team",
-        "Coordinating production both remotely and on-site"
+          "Designing and programming advanced automated lighting management system for Pax Areas",
+          "Designing cutting-edge LV electrical distribution systems for various applications",
+          "Leading an engineering team",
+          "Coordinating production both remotely and on-site"
       ]
-    },
-    {
+  },
+  {
       "name": "B372 - NKT Victoria",
       "dateRange": "Jul 2015 - May 2017",
       "description": "Cable Laying Vessel (CLV) with hull no. B372, built in Kleven Shipyard, Norway. Elected as the Ship of the Year 2017.",
       "responsibilities": [
-        "Prepared comprehensive small power drawings, ensuring precise electrical layouts.",
-        "Efficiently coordinated cable pulling activities using specialized contriubuted software",
-        "Client and Shipyard liaison"
+          "Prepared comprehensive small power drawings, ensuring precise electrical layouts.",
+          "Efficiently coordinated cable pulling activities using specialized contriubuted software",
+          "Client and Shipyard liaison"
       ]
-    },
-    {
+  },
+  {
       "name": "621 - ORP Ślązak",
       "dateRange": "Jun 2015 - Aug 2016",
       "description": "Polish patrol naval ship built at the Naval Shipyard in Gdynia, under PRS classification.",
       "responsibilities": [
-        "Preparing IO list for IACMS",
-        "Desigining electrical and automation drawings"
+          "Preparing IO list for IACMS",
+          "Desigining electrical and automation drawings"
       ]
-    }
-  ]
-  
+  }
+]
